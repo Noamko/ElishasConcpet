@@ -3,45 +3,46 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight, BookOpen, GraduationCap, Users, Star, CheckCircle } from 'lucide-react';
+import Image from 'next/image';
 
 const features = [
   {
     icon: BookOpen,
-    title: 'Curated Books',
-    description: 'Handpicked books that transform your thinking and expand your knowledge.',
+    title: 'ספרים נבחרים',
+    description: 'ספרים נבחרים בקפידה שמשנים את החשיבה שלך ומרחיבים את הידע שלך.',
     href: '/books'
   },
   {
     icon: GraduationCap,
-    title: 'Online Courses',
-    description: 'Comprehensive courses designed to accelerate your learning journey.',
+    title: 'קורסים מקוונים',
+    description: 'קורסים מקיפים שנועדו להאיץ את מסע הלמידה שלך.',
     href: '/course'
   },
   {
     icon: Users,
-    title: 'Community',
-    description: 'Join a community of like-minded learners and share insights.',
+    title: 'קהילה',
+    description: 'הצטרף לקהילה של לומדים בעלי מחשבה דומה ושתף תובנות.',
     href: '/community'
   }
 ];
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
-    role: 'Software Engineer',
-    content: 'The courses here completely changed my approach to learning. Highly recommended!',
+    name: 'שרה ג\'ונסון',
+    role: 'מהנדסת תוכנה',
+    content: 'הקורסים כאן שינו לחלוטין את הגישה שלי ללמידה. מומלץ מאוד!',
     rating: 5
   },
   {
-    name: 'Michael Chen',
-    role: 'Product Manager',
-    content: 'The book recommendations are spot-on. I\'ve learned so much from this platform.',
+    name: 'מיכאל צ\'ן',
+    role: 'מנהל מוצר',
+    content: 'המלצות הספרים מדויקות. למדתי כל כך הרבה מהפלטפורמה הזו.',
     rating: 5
   },
   {
-    name: 'Emily Rodriguez',
-    role: 'Designer',
-    content: 'Amazing community and resources. This is exactly what I was looking for.',
+    name: 'אמילי רודריגז',
+    role: 'מעצבת',
+    content: 'קהילה מדהימה ומשאבים. זה בדיוק מה שחיפשתי.',
     rating: 5
   }
 ];
@@ -66,10 +67,7 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.1 }}
                 >
-                  Unlock Your{' '}
-                  <span className="text-primary">Potential</span>
-                  <br />
-                  Through Learning
+                  הקונספט של אלישע – פיזיותרפיה בגישה אחרת
                 </motion.h1>
                 <motion.p 
                   className="text-xl text-muted-foreground max-w-lg"
@@ -77,8 +75,7 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                  Discover curated books and comprehensive online courses designed to expand your knowledge, 
-                  enhance your skills, and transform your thinking.
+                  גלו דרך חדשה לחשוב, לטפל ולהבין פיזיותרפיה – שילוב של ניסיון, חדשנות וחשיבה ביקורתית.
                 </motion.p>
               </div>
               
@@ -92,14 +89,14 @@ export default function Home() {
                   href="/course" 
                   className="btn-primary btn-lg inline-flex items-center gap-2"
                 >
-                  Start Learning
+                  התחל ללמוד
                   <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link 
                   href="/books" 
                   className="btn-outline btn-lg"
                 >
-                  Explore Books
+                  חקר ספרים
                 </Link>
               </motion.div>
 
@@ -111,15 +108,15 @@ export default function Home() {
               >
                 <div className="flex items-center gap-2">
                   <Users className="h-5 w-5" />
-                  <span>10,000+ learners</span>
+                  <span>10,000+ לומדים</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <BookOpen className="h-5 w-5" />
-                  <span>500+ books</span>
+                  <span>500+ ספרים</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <GraduationCap className="h-5 w-5" />
-                  <span>50+ courses</span>
+                  <span>50+ קורסים</span>
                 </div>
               </motion.div>
             </motion.div>
@@ -137,20 +134,22 @@ export default function Home() {
                       <BookOpen className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold">Featured Book</h3>
-                      <p className="text-sm text-muted-foreground">This Week's Pick</p>
+                      <h3 className="font-semibold">ספר מומלץ</h3>
+                      <p className="text-sm text-muted-foreground">הטיפול הפיזיותרפי ב־<br /><span dir="ltr">TMJ Dysfunction</span></p>
                     </div>
                   </div>
                   <div className="space-y-4">
-                    <h4 className="font-bold text-lg">The Art of Learning</h4>
+                    <h4 className="font-bold text-lg">הטיפול הפיזיותרפי ב־<br /><span dir="ltr">TMJ Dysfunction</span></h4>
                     <p className="text-muted-foreground text-sm">
-                      Master the skills of rapid learning and knowledge retention with proven techniques.
+                      "ספר מצוין אשר מסביר בצורה יסודית ומעמיקה את האנטומיה, הפיזיולוגיה, הביומכניקה והמכניקה של מערכת הלעיסה... ספר חובה לכל פיזיותרפיסט שעוסק בתחום הדיספונקציה של מערכת הלעיסה."
+                      <br />
+                      <span className="text-xs text-muted-foreground">— ד"ר ואסים עבוד</span>
                     </p>
                     <div className="flex items-center gap-2">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                       ))}
-                      <span className="text-sm text-muted-foreground">(4.9/5)</span>
+                      <span className="text-sm text-muted-foreground">(5/5)</span>
                     </div>
                   </div>
                 </div>
@@ -160,6 +159,31 @@ export default function Home() {
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-xl"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-secondary/30 rounded-full blur-xl"></div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Elisha and Concept Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-8">
+          {/* Photo placeholder */}
+          <Image src="/general/elisha.png" alt="אלישע קורן" width={128} height={128} className="rounded-full object-cover mb-6 md:mb-0" />
+          <div className="flex-1 space-y-4">
+            <h2 className="text-2xl font-bold">על אלישע קורן</h2>
+            <p className="text-lg">
+              <b>אלישע קורן</b> סיים את לימודי הפיזיותרפיה באוניברסיטת תל אביב ב-1986. גישתו הייחודית, שהתפתחה מתוך ניסיון של עשרות שנים, זכתה לשם "אלישע׳ס קונספט".
+            </p>
+            <h3 className="text-xl font-semibold">על הקונספט</h3>
+            <p className="text-lg">
+              "אני לא יכול לומר שאני מרוצה, תמיד ניתן להרחיב, להעמיק ולגלות... אני מאמין שספר זה נותן בידי הפיזיותרפיסט המטפל כלי שיאפשר לו לטפל בבעיות השונות של מערכת הלעיסה לא על ידי יישום של טכניקות אקראי אלא על בסיס ידע מעמיק והבנה של מערכת, האנטומיה שלה, תפקודי הטיפול ודרכי הטיפול האפשריות."
+            </p>
+            <p className="text-lg">
+             כתיבת הספר לא הייתה בתוכנית, אך מתוך חיפוש מתמיד אחר פתרונות טובים יותר ובעיות שלא קיבלו מענה, נולד "אלישע׳ס קונספט" — תפיסה מגובשת וחדשנית בפיזיותרפיה.
+            </p>
+            <p className="text-lg">
+              "אלישע׳ס קונספט" משלב גישות וטכניקות קיימות עם חדשות, ומאפשר יישום קל ויעיל בקליניקה. הספר מרכז את עקרונות הגישה והטיפול.
+            </p>
+            <Link href="/about" className="btn-primary mt-2 inline-block">קראו עוד</Link>
           </div>
         </div>
       </section>
@@ -175,11 +199,11 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Everything You Need to Succeed
+              כל מה שאתה צריך כדי להצליח
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              From curated book recommendations to comprehensive online courses, 
-              we provide the tools and resources you need to achieve your goals.
+              מהמלצות ספרים נבחרים ועד קורסים מקוונים מקיפים, 
+              אנו מספקים את הכלים והמשאבים שאתה צריך כדי להשיג את המטרות שלך.
             </p>
           </motion.div>
 
@@ -223,10 +247,10 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              What Our Learners Say
+              מה הלומדים שלנו אומרים
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Join thousands of satisfied learners who have transformed their lives through our platform.
+              הצטרף לאלפי לומדים מרוצים ששינו את חייהם דרך הפלטפורמה שלנו.
             </p>
           </motion.div>
 
@@ -270,25 +294,25 @@ export default function Home() {
             className="max-w-3xl mx-auto space-y-8"
           >
             <h2 className="text-3xl md:text-4xl font-bold">
-              Ready to Start Your Learning Journey?
+              מוכן להתחיל את מסע הלמידה שלך?
             </h2>
             <p className="text-xl opacity-90">
-              Join our community of learners and discover the power of knowledge. 
-              Start your transformation today.
+              הצטרף לקהילה שלנו של לומדים וגלה את כוח הידע. 
+              התחל את השינוי שלך היום.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/course" 
                 className="btn-secondary btn-lg inline-flex items-center gap-2"
               >
-                Get Started
+                התחל עכשיו
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link 
                 href="/about" 
                 className="btn-ghost btn-lg text-primary-foreground hover:bg-primary-foreground/10"
               >
-                Learn More
+                למידע נוסף
               </Link>
             </div>
           </motion.div>

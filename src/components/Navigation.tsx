@@ -9,11 +9,11 @@ import { useTheme } from 'next-themes';
 import { cn } from '@/lib/utils';
 
 const navigation = [
-  { name: 'Home', href: '/', icon: null },
-  { name: 'Books', href: '/books', icon: BookOpen },
-  { name: 'Course', href: '/course', icon: GraduationCap },
-  { name: 'Blog', href: '/blog', icon: FileText },
-  { name: 'About', href: '/about', icon: User },
+  { name: 'בית', href: '/', icon: null },
+  { name: 'ספרים', href: '/books', icon: BookOpen },
+  { name: 'קורסים', href: '/course', icon: GraduationCap },
+  { name: 'בלוג', href: '/blog', icon: FileText },
+  { name: 'אודות', href: '/about', icon: User },
 ];
 
 export function Navigation() {
@@ -41,8 +41,8 @@ export function Navigation() {
               className="flex items-center space-x-2 text-xl font-bold text-foreground hover:text-primary transition-colors"
             >
               <BookOpen className="h-6 w-6" />
-              <span className="hidden sm:inline-block">Elisha's Concept</span>
-              <span className="sm:hidden">EC</span>
+              <span className="hidden sm:inline-block">הקונספט של אלישע</span>
+              <span className="sm:hidden">א"ק</span>
             </Link>
           </div>
 
@@ -81,7 +81,7 @@ export function Navigation() {
             <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
-              aria-label="Toggle theme"
+              aria-label="החלף ערכת נושא"
             >
               {theme === 'dark' ? (
                 <Sun className="h-5 w-5" />
@@ -94,7 +94,7 @@ export function Navigation() {
               type="button"
               className="md:hidden p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle mobile menu"
+              aria-label="החלף תפריט נייד"
             >
               {mobileMenuOpen ? (
                 <X className="h-6 w-6" />

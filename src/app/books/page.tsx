@@ -32,7 +32,7 @@ const books = [
 ];
 
 const categories = [
-  'All',
+  'הכל',
   'פיזיותרפיה',
 ];
 
@@ -49,20 +49,20 @@ export default function BooksPage() {
             className="text-center max-w-3xl mx-auto"
           >
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Discover Amazing Books
+              גלה ספרים מדהימים
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Curated collection of books that will expand your knowledge, 
-              transform your thinking, and accelerate your growth.
+              אוסף נבחר של ספרים שירחיבו את הידע שלך, 
+              ישנו את החשיבה שלך ויאיצו את הצמיחה שלך.
             </p>
             <div className="flex items-center justify-center gap-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <BookOpen className="h-5 w-5" />
-                <span>{books.length} books</span>
+                <span>{books.length} ספרים</span>
               </div>
               <div className="flex items-center gap-2">
                 <Star className="h-5 w-5" />
-                <span>5.0 average rating</span>
+                <span>דירוג ממוצע 5.0</span>
               </div>
             </div>
           </motion.div>
@@ -107,7 +107,7 @@ export default function BooksPage() {
                     )}
                     {book.featured && (
                       <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-2 py-1 rounded-full text-xs font-medium">
-                        Featured
+                        מומלץ
                       </div>
                     )}
                   </div>
@@ -126,7 +126,7 @@ export default function BooksPage() {
                       {book.title}
                     </h3>
                     <p className="text-sm text-muted-foreground mb-3">
-                      by {book.author}
+                      מאת {book.author}
                     </p>
                     <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
                       {book.description}
@@ -139,7 +139,7 @@ export default function BooksPage() {
                         </div>
                       </div>
                       <button className="btn-primary btn-sm">
-                        Read More
+                        קרא עוד
                       </button>
                     </div>
                   </div>
@@ -161,13 +161,13 @@ export default function BooksPage() {
             className="max-w-2xl mx-auto space-y-6"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Can't Find What You're Looking For?
+              לא מוצא מה שאתה מחפש?
             </h2>
             <p className="text-xl text-muted-foreground">
-              Let us know what topics interest you, and we'll curate personalized recommendations.
+              ספר לנו איזה נושאים מעניינים אותך, ואנו נבחר המלצות מותאמות אישית.
             </p>
             <button className="btn-primary btn-lg">
-              Request a Book
+              בקש ספר
             </button>
           </motion.div>
         </div>

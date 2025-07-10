@@ -3,30 +3,30 @@ import { BookOpen, GraduationCap, FileText, User, Mail, Twitter, Linkedin, Githu
 
 const footerNavigation = {
   main: [
-    { name: 'Home', href: '/' },
-    { name: 'Books', href: '/books' },
-    { name: 'Course', href: '/course' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'About', href: '/about' },
+    { name: 'בית', href: '/' },
+    { name: 'ספרים', href: '/books' },
+    { name: 'קורסים', href: '/course' },
+    { name: 'בלוג', href: '/blog' },
+    { name: 'אודות', href: '/about' },
   ],
   social: [
     {
-      name: 'Email',
+      name: 'אימייל',
       href: 'mailto:contact@elishas-concept.com',
       icon: Mail,
     },
     {
-      name: 'Twitter',
+      name: 'טוויטר',
       href: 'https://twitter.com/elishasconcept',
       icon: Twitter,
     },
     {
-      name: 'LinkedIn',
+      name: 'לינקדאין',
       href: 'https://linkedin.com/in/elishasconcept',
       icon: Linkedin,
     },
     {
-      name: 'GitHub',
+      name: 'גיטהאב',
       href: 'https://github.com/elishasconcept',
       icon: Github,
     },
@@ -42,11 +42,11 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <BookOpen className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold text-foreground">Elisha's Concept</span>
+              <span className="text-xl font-bold text-foreground">הקונספט של אלישע</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
-              Empowering minds through insightful books and comprehensive online courses. 
-              Join our community of lifelong learners and discover new possibilities.
+              העצמת מוחות דרך ספרים תובנתיים וקורסים מקוונים מקיפים. 
+              הצטרף לקהילה שלנו של לומדים לכל החיים וגלה אפשרויות חדשות.
             </p>
             <div className="flex space-x-4">
               {footerNavigation.social.map((item) => (
@@ -67,7 +67,7 @@ export function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase mb-4">
-              Quick Links
+              קישורים מהירים
             </h3>
             <ul className="space-y-3">
               {footerNavigation.main.map((item) => (
@@ -86,7 +86,7 @@ export function Footer() {
           {/* Resources */}
           <div>
             <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase mb-4">
-              Resources
+              משאבים
             </h3>
             <ul className="space-y-3">
               <li>
@@ -94,7 +94,7 @@ export function Footer() {
                   href="/privacy"
                   className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                 >
-                  Privacy Policy
+                  מדיניות פרטיות
                 </Link>
               </li>
               <li>
@@ -102,7 +102,7 @@ export function Footer() {
                   href="/terms"
                   className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                 >
-                  Terms of Service
+                  תנאי שימוש
                 </Link>
               </li>
               <li>
@@ -110,7 +110,7 @@ export function Footer() {
                   href="/contact"
                   className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                 >
-                  Contact Us
+                  צור קשר
                 </Link>
               </li>
               <li>
@@ -118,7 +118,7 @@ export function Footer() {
                   href="/faq"
                   className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                 >
-                  FAQ
+                  שאלות נפוצות
                 </Link>
               </li>
             </ul>
@@ -129,10 +129,10 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Elisha's Concept. All rights reserved.
+              © {new Date().getFullYear()} הקונספט של אלישע. כל הזכויות שמורות.
             </p>
             <p className="text-sm text-muted-foreground">
-              Built with ❤️ using Next.js & Tailwind CSS
+              נבנה עם ❤️ באמצעות Next.js & Tailwind CSS
             </p>
           </div>
         </div>

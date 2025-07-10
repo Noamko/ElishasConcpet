@@ -6,107 +6,107 @@ import { GraduationCap, Clock, Users, Star, Play, CheckCircle } from 'lucide-rea
 const courses = [
   {
     id: 1,
-    title: 'Mastering React Development',
-    instructor: 'Sarah Johnson',
-    description: 'Learn React from scratch to advanced concepts with hands-on projects.',
-    duration: '12 hours',
+    title: 'שליטה בפיתוח React',
+    instructor: 'שרה ג\'ונסון',
+    description: 'למד React מאפס ועד מושגים מתקדמים עם פרויקטים מעשיים.',
+    duration: '12 שעות',
     students: 15420,
     rating: 4.9,
     price: 89,
     originalPrice: 129,
-    level: 'Intermediate',
+    level: 'בינוני',
     lessons: 48,
     featured: true,
-    category: 'Programming',
+    category: 'תכנות',
   },
   {
     id: 2,
-    title: 'Complete Web Development Bootcamp',
-    instructor: 'Michael Chen',
-    description: 'Full-stack web development course covering HTML, CSS, JavaScript, and Node.js.',
-    duration: '25 hours',
+    title: 'בקאמפ פיתוח אתרים מלא',
+    instructor: 'מיכאל צ\'ן',
+    description: 'קורס פיתוח אתרים מלא המכסה HTML, CSS, JavaScript ו-Node.js.',
+    duration: '25 שעות',
     students: 23450,
     rating: 4.8,
     price: 149,
     originalPrice: 199,
-    level: 'Beginner',
+    level: 'מתחיל',
     lessons: 85,
     featured: false,
-    category: 'Programming',
+    category: 'תכנות',
   },
   {
     id: 3,
-    title: 'Data Science Fundamentals',
-    instructor: 'Emily Rodriguez',
-    description: 'Introduction to data science, statistics, and machine learning concepts.',
-    duration: '18 hours',
+    title: 'יסודות מדע הנתונים',
+    instructor: 'אמילי רודריגז',
+    description: 'מבוא למדע הנתונים, סטטיסטיקה ומושגי למידת מכונה.',
+    duration: '18 שעות',
     students: 12340,
     rating: 4.7,
     price: 119,
     originalPrice: 159,
-    level: 'Intermediate',
+    level: 'בינוני',
     lessons: 62,
     featured: false,
-    category: 'Data Science',
+    category: 'מדע הנתונים',
   },
   {
     id: 4,
-    title: 'Digital Marketing Mastery',
-    instructor: 'David Kim',
-    description: 'Comprehensive digital marketing strategies for business growth.',
-    duration: '15 hours',
+    title: 'שליטה בשיווק דיגיטלי',
+    instructor: 'דוד קים',
+    description: 'אסטרטגיות שיווק דיגיטלי מקיפות לצמיחת עסקים.',
+    duration: '15 שעות',
     students: 9870,
     rating: 4.9,
     price: 99,
     originalPrice: 139,
-    level: 'Beginner',
+    level: 'מתחיל',
     lessons: 55,
     featured: false,
-    category: 'Marketing',
+    category: 'שיווק',
   },
   {
     id: 5,
-    title: 'UI/UX Design Principles',
-    instructor: 'Lisa Wang',
-    description: 'Master the fundamentals of user interface and user experience design.',
-    duration: '10 hours',
+    title: 'עקרונות עיצוב UI/UX',
+    instructor: 'ליסה וואנג',
+    description: 'שלט ביסודות עיצוב ממשק משתמש וחוויית משתמש.',
+    duration: '10 שעות',
     students: 8760,
     rating: 4.8,
     price: 79,
     originalPrice: 119,
-    level: 'Beginner',
+    level: 'מתחיל',
     lessons: 42,
     featured: false,
-    category: 'Design',
+    category: 'עיצוב',
   },
   {
     id: 6,
-    title: 'Advanced JavaScript Concepts',
-    instructor: 'Alex Thompson',
-    description: 'Deep dive into advanced JavaScript patterns and best practices.',
-    duration: '14 hours',
+    title: 'מושגי JavaScript מתקדמים',
+    instructor: 'אלכס תומפסון',
+    description: 'צלילה עמוקה לתבניות JavaScript מתקדמות ופרקטיקות מומלצות.',
+    duration: '14 שעות',
     students: 11230,
     rating: 4.9,
     price: 109,
     originalPrice: 149,
-    level: 'Advanced',
+    level: 'מתקדם',
     lessons: 58,
     featured: false,
-    category: 'Programming',
+    category: 'תכנות',
   },
 ];
 
 const categories = [
-  'All',
-  'Programming',
-  'Data Science',
-  'Marketing',
-  'Design',
-  'Business',
-  'Personal Development',
+  'הכל',
+  'תכנות',
+  'מדע הנתונים',
+  'שיווק',
+  'עיצוב',
+  'עסקים',
+  'פיתוח אישי',
 ];
 
-const levels = ['All Levels', 'Beginner', 'Intermediate', 'Advanced'];
+const levels = ['כל הרמות', 'מתחיל', 'בינוני', 'מתקדם'];
 
 export default function CoursePage() {
   return (
@@ -121,24 +121,24 @@ export default function CoursePage() {
             className="text-center max-w-4xl mx-auto"
           >
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Master New Skills with Our Courses
+              שלט במיומנויות חדשות עם הקורסים שלנו
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Comprehensive online courses designed by industry experts to help you 
-              learn at your own pace and achieve your career goals.
+              קורסים מקוונים מקיפים שנועדו על ידי מומחי תעשייה כדי לעזור לך 
+              ללמוד בקצב שלך ולהשיג את מטרות הקריירה שלך.
             </p>
             <div className="flex items-center justify-center gap-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <GraduationCap className="h-5 w-5" />
-                <span>{courses.length}+ courses</span>
+                <span>{courses.length}+ קורסים</span>
               </div>
               <div className="flex items-center gap-2">
                 <Users className="h-5 w-5" />
-                <span>75,000+ students</span>
+                <span>75,000+ סטודנטים</span>
               </div>
               <div className="flex items-center gap-2">
                 <Star className="h-5 w-5" />
-                <span>4.8+ average rating</span>
+                <span>דירוג ממוצע 4.8+</span>
               </div>
             </div>
           </motion.div>
@@ -199,7 +199,7 @@ export default function CoursePage() {
                     </div>
                     {course.featured && (
                       <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-2 py-1 rounded-full text-xs font-medium">
-                        Featured
+                        מומלץ
                       </div>
                     )}
                     <div className="absolute top-4 right-4 bg-background/80 backdrop-blur px-2 py-1 rounded text-xs font-medium">
@@ -216,7 +216,7 @@ export default function CoursePage() {
                       {course.title}
                     </h3>
                     <p className="text-sm text-muted-foreground mb-3">
-                      by {course.instructor}
+                      מאת {course.instructor}
                     </p>
                     <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
                       {course.description}
@@ -229,7 +229,7 @@ export default function CoursePage() {
                       </div>
                       <div className="flex items-center gap-1">
                         <CheckCircle className="h-4 w-4" />
-                        <span>{course.lessons} lessons</span>
+                        <span>{course.lessons} שיעורים</span>
                       </div>
                       <div className="flex items-center gap-1">
                         <Users className="h-4 w-4" />
@@ -247,17 +247,17 @@ export default function CoursePage() {
                       <div className="text-right">
                         <div className="flex items-center gap-2">
                           <span className="text-2xl font-bold text-foreground">
-                            ${course.price}
+                            ₪{course.price}
                           </span>
                           <span className="text-sm text-muted-foreground line-through">
-                            ${course.originalPrice}
+                            ₪{course.originalPrice}
                           </span>
                         </div>
                       </div>
                     </div>
 
                     <button className="btn-primary w-full mt-4">
-                      Enroll Now
+                      הירשם עכשיו
                     </button>
                   </div>
                 </div>
@@ -278,18 +278,18 @@ export default function CoursePage() {
             className="max-w-3xl mx-auto space-y-8"
           >
             <h2 className="text-3xl md:text-4xl font-bold">
-              Ready to Transform Your Career?
+              מוכן לשנות את הקריירה שלך?
             </h2>
             <p className="text-xl opacity-90">
-              Join thousands of students who have already taken the first step towards 
-              their dream career with our comprehensive courses.
+              הצטרף לאלפי סטודנטים שכבר עשו את הצעד הראשון לקראת 
+              הקריירה החלומית שלהם עם הקורסים המקיפים שלנו.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="btn-secondary btn-lg">
-                Browse All Courses
+                עיין בכל הקורסים
               </button>
               <button className="btn-ghost btn-lg text-primary-foreground hover:bg-primary-foreground/10">
-                Get a Free Trial
+                קבל ניסיון חינם
               </button>
             </div>
           </motion.div>
